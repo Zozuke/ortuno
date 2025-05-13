@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ortuño Painting</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+      display: grid;
+      grid-template-areas: "header" "main" "footer";
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr auto;
+      text-align:center;
+    }
+
+    .header {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                  url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzUwrRY-fA5B4SEfKeNaYAHcGsjRSF_9DFhBxsLnznFw&s') no-repeat center center/cover;
+      padding: 20px;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .menu h5 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .caja {
+      display: flex;
+      gap: 10px;
+    }
+
+    .a {
+      font-size: 10px;
+      margin: 3px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .main {
+      grid-area: main;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+    }
+
+    .footer {
+        grid-area:footer;
+  background-color: #111;
+  color: #ccc;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 2px solid #0072ff;
+}
+
+.footer .redes {
+  margin-top: 10px;
+}
+
+.footer .redes a {
+  color: #00c6ff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer .redes a:hover {
+  color: #fff;
+}
+    .contenido{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        gap:5px;
+    }
+    .targeta{
+        background-color:white;
+        font-size:10px;
+    }
+    .targeta p{
+        color:black;
+    }
+    h3{
+        color:green;
+    }
+    .fotos{
+        Font-size:50px;
+        margin-top:20px;
+        box-shadow:0px 10px 40px rgba(0, 0, 255, 0.7);
+    }
+    .boton a {
+  display: inline-block;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(0, 114, 255, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.boton a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 114, 255, 0.6);
+}
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="menu">
+      <h5>Ortuño</h5>
+      <div class="caja">
+        <a class="a">Orders</a>
+        <a class="a">Quotation</a>
+        <a class="a">Information</a>
+      </div>
+    </div>
+    <h1>Ortuño Family<br> Painting</h1>
+  </div>
+
+  <div class="main">
+    <p>Bring life to your home with these amazing options</p>
+    <div class="contenido">
+       <div class="targeta">
+           <h3>Quality<br>Paint</h3>
+           <p>You can choose the paint you like the most from many colors</p>
+       </div>
+       <div class="targeta"><h3>The best<br>guarantee</h3>
+       <p>We offer a guarantee to fix any defects that arise from the work</p>
+       </div>
+       <div class="targeta"><h3>Best<br>prices</h3>
+       <P>Affordable prices so painting your house won't be a problem</P>
+       </div>
+       <div class="targeta"><h3>Comfort for<br>your home</h3>
+       <p>Jobs are done as quickly as possible, both indoors and outdoors</p>
+       </div>
+    </div>
+    <div class="fotos">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9iRZ6X4F9gMDVm-nfBqyngJXOu29B97CsqoUrC_waFQ&s" width="300px" height="200px">
+        <h3>Colors</h3>
+        <p>Make your home stand out with amazing colors</p>
+        <img src="https://i.ibb.co/spBgCvYX/images-5.jpg" alt="images-5" border="0" width="300px" height="200px">
+        <h3>Move your heart</h3>
+        <p>Fill your family with joy</p>
+        <div class="boton">
+            <a href="#">Hire us</a>
+        </div>
+    </div>
+  </div>
+
+  <div class="footer">
+  <p>&copy; 2025 Ortuño Family ANGEL - All rights reserved</p>
+  <div class="redes">
+    <a href="#">Facebook</a>
+    <a href="#">Instagram</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+</body>
+</html>
